@@ -1,7 +1,6 @@
 /* solved
 https://www.codewars.com/kata/simple-simple-simple-string-expansion/train/javascript
  */
-
 function stringExpansion(s) {
     let strNew = '';
     let n = 1;
