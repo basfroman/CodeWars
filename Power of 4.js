@@ -7,11 +7,11 @@ function powerOf4(n) {
 }
 
 
-Test.expect(powerOf4(4));
-Test.expect(powerOf4(16));
-Test.expect(powerOf4(1) === false);
-Test.expect(powerOf4(3.1415) === false);
-Test.expect(powerOf4("4") === false);
-Test.expect(powerOf4(null) === false);
-Test.expect(powerOf4(undefined) === false);
-Test.expect(powerOf4(function() {}) === false);
+console.log(powerOf4(4));
+console.log(powerOf4(16));
+console.log(powerOf4(1));
+console.log(powerOf4(3.1415));
+console.log(powerOf4("4"));
+console.log(powerOf4(null));
+console.log(powerOf4(undefined));
+console.log(powerOf4(function() {}));
