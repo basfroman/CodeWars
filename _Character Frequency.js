@@ -11,3 +11,8 @@ function charFreq(message) {
 
 
 console.log(charFreq('I like cats'));
+
+/*
+dfhsdfjhsdfsdfsd
+
+*/
