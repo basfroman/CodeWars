@@ -15,7 +15,9 @@ function sameMark(alibaba,neighborhoods){
 
             if (alb[ind - count] === ch){
 
-                out += x[ind - count];
+                if (ind - count < x.length) {
+                    out += x[ind - count];
+                }
 
             } else {
 
@@ -29,13 +31,12 @@ function sameMark(alibaba,neighborhoods){
             out += x.substring(alb.length);
         }
         return out;
-
-
     })
-
 }
 
 
 //sameMark("A*l#i@B!a%b&a",["JohnSmith","MichaelJackson","JamesBond"])
-console.log(sameMark("A*l#i@B!a%b&a",["JohnSmith","MichaelJackson","JamesBond"]));
-console.log(["J*o#h@n!S%m&ith","M*i#c@h!a%e&lJackson","J*a#m@e!s%B&ond"]);
+//console.log(sameMark("A*l#i@B!a%b&a",["JohnSmith","MichaelJackson","JamesBond"]));
+//console.log(["J*o#h@n!S%m&ith","M*i#c@h!a%e&lJackson","J*a#m@e!s%B&ond"]);
+console.log(sameMark("(A)(l)(i)(B)(a)(b)(a)",["Adam","Eva","Snake","Apple"]));
+console.log(["(A)(d)(a)(m)()()()","(E)(v)(a)()()()()","(S)(n)(a)(k)(e)()()","(A)(p)(p)(l)(e)()()"]);
