@@ -8,8 +8,6 @@ function findAll(n, k) {
 
     for (let i = start; i <= end; i++) {
 
-        //console.log(i, end-i + start);
-
         if (String(i).split('').map(Number).reduce((x,y) => (x+y)) === n &&
             out[1] === -2 &&
             String(i).split('').sort().join('') === String(i))
@@ -23,7 +21,6 @@ function findAll(n, k) {
         {
             out[2] = String(end - i + start);
         }
-
     }
 
     for(let i = out[1]; i <= out[2]; i++){
