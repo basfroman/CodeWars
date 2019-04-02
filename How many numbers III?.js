@@ -8,11 +8,11 @@ function findAll(n, k) {
     let end = String((n - (n % k)) / k).repeat(k - (n % k)) + String((n - (n % k)) / k + 1).repeat((n % k));
 
     let out = [0, start, end];
-    let count = start;
     let begin = [];
     let begin_str = '';
+    let bnm = start;
 
-    for (let i = +start; i <= +end; i += 9) {
+    for (let i = +start; i <= +end; i ++) {
 
         begin_str = String(i);
         begin = begin_str.split('');
@@ -20,7 +20,8 @@ function findAll(n, k) {
         if (begin.map(Number).reduce((x, y) => (x + y)) === n &&
             begin.sort().join('') === String(i)) {
             out[0] += 1;
-            count = i;
+            console.log(i, i - bnm, (i - bnm)/9);
+            bnm = i;
         }
     }
 
@@ -28,7 +29,6 @@ function findAll(n, k) {
 }
 
 console.log(findAll(35, 6)); // [123, '116999', '566666'])
-//findAll(10, 3)
 console.log(findAll(10, 3)); // [8, '118', '334']);
 console.log(findAll(27, 3)); // [1, '999', '999']);
 console.log(findAll(84, 4)); // []);
