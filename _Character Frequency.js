@@ -10,4 +10,5 @@ function charFreq(message) {
 }
 
 
+/* rem */
 console.log(charFreq('I like cats'));
