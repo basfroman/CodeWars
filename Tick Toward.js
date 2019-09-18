@@ -27,7 +27,6 @@ function tickToward(start,end){
     return out;
 }
 
-
 console.log(tickToward([3, 3],[3, 3])); //[3,2],[4,3],[4,4],[4,5]
 console.log(tickToward([3, 2],[4, 5])); //[3,2],[4,3],[4,4],[4,5]
 console.log(tickToward([5, 1],[5, -2])); // [[5,1],[5,0],[5,-1],[5,-2]]
