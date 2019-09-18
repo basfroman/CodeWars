@@ -25,7 +25,6 @@ function tickToward(start,end){
         out.push([x, y]);
     }
     return out;
-
 }
 
 
